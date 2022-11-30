@@ -9,6 +9,7 @@
 
 /* Reset */
 
+
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -17,6 +18,61 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+
+p{text-align: left; }
+
+
+.subir{
+    text-align: right;
+    position: relative;
+    padding-left: 70%;
+	display: block;
+	padding-right: 3%;
+	padding-bottom: 1%;
+	 background-color: #f5f6f7;
+   
+}
+
+body{
+  background-color: lightgrey;
+  font-family: sans-serif;
+}
+
+.container{
+  margin: auto;
+  background-color: white;
+  width: 800px;
+  padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+.menu{
+  text-align: center;
+  margin: 20px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    height: 0px;
+    width: 0px;
+}
+
+
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -82,6 +138,7 @@
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+
 
 /* Spinner */
 
@@ -593,6 +650,19 @@
 	p, ul, ol, dl, table {
 		margin-bottom: 1em;
 	}
+.content .contact .contact_actions {
+    margin: center;
+	padding-bottom: 4%;
+	
+}
+
+.textlogo {
+    padding-left: 3%;
+    letter-spacing: 3px;
+	}
+.textnav {color: #A3A3A3;
+		padding-right: 3%;
+}
 
 /* Box */
 
@@ -653,6 +723,7 @@
 		text-decoration: none;
 	}
 
+
 		input[type="button"].down,
 		input[type="submit"].down,
 		input[type="reset"].down,
@@ -668,6 +739,8 @@
 			text-indent: -10em;
 			overflow: hidden;
 		}
+
+		
 
 			input[type="button"].down.anchored,
 			input[type="submit"].down.anchored,
@@ -879,7 +952,7 @@
 	}
 
 /* Icon */
-
+ 	.luz:hover {filter: opacity(.5);}
 	.icon {
 		text-decoration: none;
 	}
@@ -901,10 +974,14 @@
 		}
 
 /* Image */
+.image:hover {filter: opacity(.5);}
+
 
 	.image {
 		position: relative;
 		display: inline-block;
+		
+		
 	}
 
 		.image:before {
@@ -1026,6 +1103,7 @@
 			margin: 1em 0 0 0;
 			padding: 0 0 0.5em 0;
 		}
+
 
 	footer {
 		margin-top: 2em;
@@ -1664,15 +1742,16 @@
 /* Header */
 
 	#header {
-		position: fixed;
-		z-index: 10000;
-		left: 0;
-		top: 0;
-		width: 100%;
-		background: rgba(255, 255, 255, 0.95);
-		height: 3em;
-		line-height: 3em;
-		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    height: 3em;
+    line-height: 3em;
+    box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+    padding-bottom: 0px;
 	}
 
 		#header h1 {
@@ -1884,7 +1963,7 @@
 		}
 
 			.main.style3 .content > header {
-				margin-bottom: 2em;
+    margin-bottom: 2em;
 			}
 
 			.main.style3.primary {
@@ -2095,17 +2174,129 @@
 					line-height: 1.5em;
 				}
 
-		}
+		
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    border-style: none;
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+#menupeque{
+    background-color: black;
+    width: 100%;
+    display: block;
+    height: 50px;
+    overflow: hidden;
+    position:fixed;
+    -webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+}
+
+
+.cajamenu{
+    
+    width: 50%;
+    margin: auto;
+}
+
+
+
+
+.iconohambu{
+    display: block;
+    margin: auto;
+    
+}
+
+.estirar{
+    height: 200px!important;
+    display: block;
+}
+
+#menupeque a {
+    color: white;
+    width: 100%;
+    float: left;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+     font-family: 'Raleway', sans-serif;
+    
+   
+    
+}
+#imglogo{
+    display: none;
+}
+.menu {
+    display:none;
+}
+
+
+
+}
+.app img {
+    width: 30%;
+    height: auto;
+
+}
+
+.icono1,
+.icono2,
+.icono3,
+.icono4 {
+    width: 100%;
+    float: left;
+    margin: auto;
+    text-align: center;
+    
+}
+.bloque1 img{
+    width: 100%;
+    float: left;
+    display: block;
+    padding-bottom: 10%;
+   
+}
+.imagenpeque{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+
+.app h1{
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+.app h2{
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    
+}
+.app {
+   
+
+    width: 70%;
+    margin: auto;
+}
 
 /* Intro */
 
-	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
-	}
+#intro {background-color: black;
+}
 
 /* One */
 
@@ -2128,8 +2319,9 @@
 /* Contact */
 
 	#contact {
-		overflow: hidden;
-		padding-bottom: 0;
+    overflow: hidden;
+    padding-top: 35px;
+    padding-bottom: 0px;
 	}
 
 		#contact .box {
